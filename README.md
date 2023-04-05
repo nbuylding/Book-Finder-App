@@ -22,4 +22,4 @@ The biggest things I learned while completing this project was how to remove ind
 -   [MDN](https://developer.mozilla.org/en-US/)
 -   [W3 School](https://www.w3schools.com/)
 -   [StackOverflow](https://stackoverflow.com/)
--   [ChatGPT]
+-   [ChatGPT](https://platform.openai.com/overview)
