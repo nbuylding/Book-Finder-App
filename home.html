@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			href="images/open-book.png"
+			title="books icons"
+			type="image/x-icon"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<!-- <script defer src="app.js"></script> -->
+		<title>Book Finder</title>
+	</head>
+
+	<body>
+		<header class="nav-bar">
+			<img
+				src="images/fantasy-book-finder-logo.png"
+				alt="site logo"
+				width="100px"
+				height="80px"
+				id="logo"
+			/>
+			<nav>
+				<a href="#home" id="home">Home</a>
+
+				<a href="#favourites">My Favourites</a>
+			</nav>
+			<div>
+				<input
+					type="text"
+					name="search"
+					placeholder="Search"
+					id="clear"
+				/>
+				<button type="submit" id="submit">Enter</button>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<!-- homepage -->
+				<img src="images/book-stack.jpg" alt="image of stacked books" />
+				<blockquote id="quotes">
+					“When you compare the sorrows of real life to the pleasures
+					of the imaginary one, you will never want to live again,
+					only to dream forever.” <br /><br />-Alexandre Dumas,
+					<i>The Count of Monte Cristo</i>
+				</blockquote>
+			</div>
+
+			<!-- results list -->
+			<div class="book-list" id="book-list"></div>
+			<div class="description-popup" id="description-popup"></div>
+
+			<!-- favourites list -->
+			<div id="favourites"></div>
+		</main>
+
+		<footer>
+			<p>Copyright © Natasha Buylding 2023</p>
+		</footer>
+		<script src="app.js"></script>
+	</body>
+</html>
