@@ -1,4 +1,5 @@
 'use strict';
+import apiKey from './config.js';
 
 const searchInput = document.querySelector('input');
 const searchBtn = document.querySelector('#submit');
@@ -8,8 +9,6 @@ const favoritesContainer = document.querySelector('#favourites');
 const popupOverlay = document.querySelector('.description-popup');
 const backHome = document.querySelector('#home');
 const faveImg = favoritesContainer.querySelector('img');
-
-const apiKey = 'AIzaSyCSQcUYCciFyLcVpLQ9HIL5GLpPGobJ6tU';
 
 //  fetching book info
 const getJSON = function () {
