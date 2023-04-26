@@ -1,5 +1,5 @@
 'use strict';
-import apiKey from './config.js';
+import ApiKey from './config.js';
 
 const searchInput = document.querySelector('input');
 const searchBtn = document.querySelector('#submit');
@@ -13,7 +13,7 @@ const faveImg = favoritesContainer.querySelector('img');
 //  fetching book info
 const getJSON = function () {
 	const searchTerm = searchInput.value;
-	const url = `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${apiKey}`;
+	const url = `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${ApiKey}`;
 
 	fetch(url)
 		.then((response) => response.json())
@@ -111,7 +111,7 @@ function loadFavorites() {
 	const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 	favorites.forEach((id) => {
-		const url = `https://www.googleapis.com/books/v1/volumes/${id}?key=${apiKey}`;
+		const url = `https://www.googleapis.com/books/v1/volumes/${id}?key=${ApiKey}`;
 		fetch(url)
 			.then((response) => response.json())
 			.then((data) => {
